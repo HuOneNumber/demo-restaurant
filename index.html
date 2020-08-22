@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>餐厅游戏</title>
+  <link rel="stylesheet" href="./asset/style.css">
+  <link rel="stylesheet" href="./asset/reset.css">
+</head>
+<body>
+
+  <!-- 餐厅信息 -->
+  <div class="rst-info">
+
+    <!-- 时间区 -->
+    <div class="date">W12 D5</div>
+
+    <!-- 金币区 -->
+    <div class="cash">1,948,343</div>
+
+  </div>
+
+  <!-- 厨师区 -->
+  <ul class="chef-area">
+
+    <!-- 做菜厨师 -->
+    <li class="cooking person">  
+      <img src="./asset/iconfinder_Chef-2_379358.png">
+      <p class="cook-progress">红烧HEAD</p>
+    </li>
+
+    <!-- 出餐厨师 -->
+    <li class="cook-finish person">  
+        <div class="dish-serve"></div>
+        <img src="./asset/iconfinder_Chef-2_379358.png">  
+        <p class="cook-progress">鲜榨flex</p>
+    </li>
+
+    <!-- 做菜厨师 -->
+    <li class="cooking person">  
+      <img src="./asset/iconfinder_Chef-2_379358.png">
+      <p class="cook-progress">红烧HEAD</p>
+    </li>
+
+    <!-- 删除厨师 -->
+    <li class="delete-chef person">  
+        <button class="delete-btn">X</button>
+        <img src="./asset/iconfinder_Chef-2_379358.png">
+    </li>
+
+    <!-- 添加厨师 -->
+    <li class="add-chef person">  
+        <button class="add-btn">+</button>
+        <img src="./asset/iconfinder_Chef-2_379358.png">
+    </li>
+
+  </ul>
+
+  <!-- 顾客区 -->
+  <ul class="customers-area">
+
+    <!-- 生气的顾客 -->
+    <li class="anger person">
+      <img src="./asset/379446-512.png" alt="">
+      <ul class="food-menu">
+        <li class="food-overtime">UL炖LI</li>
+        <li class="food-overtime">鲜榨flex</li>
+      </ul>
+      <img class="anger-icon" src="./asset/iconfinder_Instagram_UI-07_2315589.png" alt="">
+    </li>
+
+    <!-- 吃完的顾客 -->
+    <li class="pay person">
+      <img src="./asset/379448-512.png" alt="">
+      <ul class="food-menu">
+        <li class="eat-finish">UL炖LI</li>
+        <li class="eat-finish">UL炖LI</li>
+        <li class="eat-finish">UL炖LI</li>
+      </ul>
+      <img class="coin-icon" src="./asset/iconfinder_Euro-Coin_379523.png" alt="">     
+    </li>
+
+    <!-- 正在吃的顾客 -->
+    <li class="eating person">
+      <img src="./asset//iconfinder_Boss-3_379348.png" alt="">
+      <ul class="food-menu">
+        <li class="eating-progress">UL炖LI</li>
+      </ul>
+      <img src="" alt="">
+    </li>
+
+    <!-- 吃完的顾客 -->
+    <li class="pay person">
+      <img src="./asset//iconfinder_Rasta_379441.png" alt="">
+      <ul class="food-menu">
+        <li class="eat-finish">UL炖LI</li>
+        <li class="eat-finish">UL炖LI</li>
+        <li class="food-overtime">红烧HEAD</li>
+      </ul>
+      <img class="coin-icon" src="./asset/iconfinder_Euro-Coin_379523.png" alt="">  
+    </li>
+
+  </ul>
+
+  <!-- 排队区 -->
+  <ul class="customers-queue-area">
+
+    <!-- 等待顾客 -->
+    <li class="customer-queue person">
+      <img src="./asset//iconfinder_Man-16_379485.png" alt="">
+      <p class="queue-progress">等位中</p>
+    </li>
+
+      <!-- 等待顾客 -->
+    <li class="customer-queue person">
+      <img src="./asset//379339-512.png" alt="">
+      <p class="queue-progress">等位中</p>
+    </li>
+
+  </ul>
+</body>
+</html>

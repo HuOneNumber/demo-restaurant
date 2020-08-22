@@ -1,0 +1,278 @@
+/* 背景图 */
+html, body {
+  height: 100%;
+  overflow: auto;
+}
+body {
+  background: url(./dose-juice-sTPy-oeA3h0-unsplash.jpg) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+/* 时间、金币信息公共样式 */
+.rst-info {
+  margin: 0.7rem 0.7rem 0 0.7rem;
+  display: flex;
+  justify-content: space-between; 
+  max-width: 800px;  
+}
+.rst-info .date, .rst-info .cash{
+  height: 3rem;
+  border: 0.4rem solid #8c6900;
+  border-radius: 3rem;
+  background: linear-gradient(to bottom, #ffe699 0%,#ffe699 49%, #ffd24d 50%, #ffd24d 100%);
+  vertical-align: middle;
+  line-height: 3rem;
+  font-size: 1rem;
+  color: #8c6900;
+}
+/* 时间信息 */
+.rst-info .date {
+  left: 0px;  
+  width: 6rem;
+  text-align: center;
+}
+
+/* 金币信息 */
+.rst-info .cash {
+  right: 0px;
+  text-align: right;
+  padding-right: 1rem;
+  width: 20rem;
+}
+
+/* 厨师、顾客区公共样式 */
+.chef-area, .customers-area {
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+  border: 0.4rem solid #fff;
+  border-radius: 1.2rem;
+  padding: 0.3rem;
+}
+
+/* 厨师、顾客人物公共样式 */
+.person {
+  width: 7rem;
+  height: 7rem;
+  border: 0.3rem solid #fff;
+  border-radius: 100%;
+  text-align: center;
+  position: relative;
+}
+.person img {
+  width: 100%;    
+  height: 100%;  
+}
+.chef-area .person {
+  margin: auto auto 1.5rem auto ;
+}
+.customers-area .person {
+  margin:0 2rem 0.6rem 0;
+}
+
+
+/* 厨师区 */
+.chef-area {
+  background-color: #ffd24d;
+
+}
+/* 做菜进度 */
+.chef-area .cook-progress {
+  width: 80%;
+  height: 1.5rem;
+  margin: -1.1rem auto 0 auto;
+  background: linear-gradient(to right, #d96d00  0%,#d96d00  50%,#ff9122 51%,#ff9122 100%);
+  line-height: 1.5rem;
+  color: #fff;
+  border: 0.2rem solid #fff;
+  padding: 0.2rem;
+}
+
+/* 出餐的进度样式 */
+.chef-area .cook-finish .cook-progress {
+  background: #ac91ff;
+}
+
+/* 正在做菜厨师 */
+.chef-area .cooking {
+  background: linear-gradient(to right, #ff9122 0%,#ff9122 50%,#d96d00 51%,#d96d00 100%);
+} 
+
+/* 出餐的厨师 */
+.chef-area .cook-finish  {
+  background: linear-gradient(to right, #ac91ff 0%,#ac91ff 50%,#7a4dff 51%,#7a4dff 100%);
+} 
+
+/* 出餐提示 */
+.chef-area .cook-finish .dish-serve {
+  background: url(./iconfinder_Food-Dome_379366.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: -1.2rem;
+  top: 1.4rem;
+}
+
+/* 删除厨师 */
+.chef-area .delete-chef {
+  background: linear-gradient(to right, #dddddd 0%,#dddddd 50%,#aaaaaa 51%,#aaaaaa 100%);
+
+} 
+/* 删除按钮 */
+.chef-area .delete-chef .delete-btn {
+  color: #cc9979;
+  font-size: 3rem;
+  font-weight: 800;
+  cursor: pointer;
+  position: absolute;
+  top: -1.5rem;
+  left: 6rem;
+}
+
+/* 添加厨师 */
+.chef-area .add-chef {
+  background-color: #dddddd;
+  text-align: center;
+
+}
+.chef-area .add-chef img {
+  filter: brightness(100);
+}
+
+/* 添加按钮 */
+.chef-area .add-chef .add-btn {
+  width: 100%;
+  color: #cc9979;
+  font-size: 4rem;
+  font-weight: 1000;
+  position: absolute;
+  cursor: pointer;
+  line-height: 7rem;
+  z-index: 999;
+} 
+
+
+/* 顾客区 */
+.customers-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: relative;
+  background-color: #ffa64d;
+}
+
+/* 顾客菜单 */
+.customers-area .food-menu {
+  position: absolute;
+  top: -0.2rem;
+  left: 4.4rem;
+  width: 5rem;
+}
+
+/* 菜单间隔 */
+.customers-area .food-menu li:not(:first-child) {
+  margin-top: 0.2rem;
+}
+
+/* 超时的食物 */
+.customers-area .food-overtime {
+  background-color: #535362;
+  line-height: 2rem;
+  text-decoration:line-through;
+  color: #fff;
+  width: 100%;
+  height: 2rem;
+  border: 0.2rem solid #fff;
+}
+/* 有超时食物的付款顾客 */
+.customers-area .pay .food-overtime {
+  background: #00b200
+}
+
+/* 吃完的食物 */
+.customers-area .pay .eat-finish {
+  background-color: #00b200;
+  line-height: 2rem;
+  color: #fff;
+  width: 100%;
+  height: 2rem;
+  border: 0.2rem solid #fff;
+}
+
+/* 进食的进度 */
+.customers-area .eating-progress {
+  background: linear-gradient(to right,#d96d00 0%,#d96d00 40%,#ff9122 41%,#ff9122 100% );
+  line-height: 2rem;
+  color: #fff;
+  width: 100%;
+  height: 2rem;
+  border: 0.2rem solid #fff;
+}
+
+/* 生气的顾客 */
+.customers-area .anger {
+  position: relative;
+  background: linear-gradient(to right, #661a00 0%,#661a00 50%,#401000 51%,#401000 100%);
+}
+/* 生气提示 */
+.customers-area .anger .anger-icon  {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 2.8rem;
+  left: -2.8rem;
+  cursor: pointer;
+}
+
+/* 付款的顾客 */
+.customers-area .pay {
+  position: relative;
+  background: linear-gradient(to right, #80ff00 0%,#80ff00 50%,#00b200 51%,#00b200 100%);
+}
+
+/* 付款提示 */
+.customers-area .pay .coin-icon {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  top: 2.8rem;
+  left: -2.8rem;
+  cursor: pointer;
+}
+
+/* 正在吃的顾客 */
+.customers-area .eating {
+  position: relative;
+  background: linear-gradient(to right, #ff9122 0%,#ff9122 50%,#d96d00 51%,#d96d00 100%);
+}
+
+/* 等待顾客区 */
+.customers-queue-area{
+  display: flex;
+  justify-content: flex-end;
+  margin: -1.6rem 1.6rem 1rem 0;
+}
+
+/* 排队进度 */
+.customers-queue-area .queue-progress {
+  position: absolute;
+  top: 5.6rem;
+  left: -0.6rem;
+  background: linear-gradient(to right, #006dd9 0%,#006dd9 45%,#2693ff 46%,#2693ff 100%);
+  color: #fff;
+  width: 7.8rem;
+  height: 2rem;
+  border: 0.2rem solid #fff;
+}
+
+/* 排队顾客 */
+.customers-queue-area .customer-queue {
+  margin-left: -2rem;
+  z-index: 999;
+  background: linear-gradient(to right, #2693ff 0%,#2693ff 50%,#006dd9 51%,#006dd9 100%);
+}
+
+.customers-queue-area .customer-queue:last-child {
+  z-index: 998;
+}
