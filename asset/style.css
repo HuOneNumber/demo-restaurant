@@ -9,25 +9,27 @@ body {
 }
 /* 时间、金币信息公共样式 */
 .rst-info {
-  margin: 0.7rem 0.7rem 0 0.7rem;
+  width: 33.777rem;
+  margin: 0.944rem auto 0;
   display: flex;
-  justify-content: space-between; 
-  max-width: 800px;  
+  justify-content: space-between;  
 }
 .rst-info .date, .rst-info .cash{
-  height: 3rem;
+  height: 4.375rem;
+  box-sizing: border-box;
   border: 0.4rem solid #8c6900;
   border-radius: 3rem;
   background: linear-gradient(to bottom, #ffe699 0%,#ffe699 49%, #ffd24d 50%, #ffd24d 100%);
   vertical-align: middle;
-  line-height: 3rem;
+  line-height: 3.5rem;
   font-size: 1rem;
+  font-weight: 550;
   color: #8c6900;
 }
 /* 时间信息 */
 .rst-info .date {
+  width: 13.125rem;
   left: 0px;  
-  width: 6rem;
   text-align: center;
 }
 
@@ -35,26 +37,30 @@ body {
 .rst-info .cash {
   right: 0px;
   text-align: right;
-  padding-right: 1rem;
-  width: 20rem;
+  padding-right: 1.22rem;
+  width: 17.222rem;
 }
 
 /* 厨师、顾客区公共样式 */
 .chef-area, .customers-area {
-  max-width: 800px;
+  max-width: 1024px;
+  width: 33.888rem;
+  height: 20.55556rem;
   display: flex;
   flex-wrap: wrap;
-  margin: 0.5rem;
+  margin: 1.1667rem auto 0;
   border: 0.4rem solid #fff;
+  box-sizing: border-box;
   border-radius: 1.2rem;
   padding: 0.3rem;
 }
 
 /* 厨师、顾客人物公共样式 */
 .person {
-  width: 7rem;
-  height: 7rem;
+  width: 7.11rem;
+  height: 7.11rem;
   border: 0.3rem solid #fff;
+  box-sizing: border-box;
   border-radius: 100%;
   text-align: center;
   position: relative;
@@ -64,28 +70,30 @@ body {
   height: 100%;  
 }
 .chef-area .person {
-  margin: auto auto 1.5rem auto ;
+  margin: 1.8rem 1.8rem 0;
 }
+
 .customers-area .person {
-  margin:0 2rem 0.6rem 0;
+  margin: 0.44rem 8rem 0.44rem 0;
 }
 
 
 /* 厨师区 */
 .chef-area {
   background-color: #ffd24d;
-
 }
+
 /* 做菜进度 */
 .chef-area .cook-progress {
-  width: 80%;
-  height: 1.5rem;
+  width: 6.8889rem;
+  height: 2.055rem;
   margin: -1.1rem auto 0 auto;
   background: linear-gradient(to right, #d96d00  0%,#d96d00  50%,#ff9122 51%,#ff9122 100%);
-  line-height: 1.5rem;
+  line-height: 1.25rem;
   color: #fff;
   border: 0.2rem solid #fff;
   padding: 0.2rem;
+  box-sizing: border-box;
 }
 
 /* 出餐的进度样式 */
@@ -107,11 +115,11 @@ body {
 .chef-area .cook-finish .dish-serve {
   background: url(./iconfinder_Food-Dome_379366.png) 0 0 no-repeat;
   background-size: 100% 100%;
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   position: absolute;
   left: -1.2rem;
-  top: 1.4rem;
+  top: 1.6rem;
 }
 
 /* 删除厨师 */
@@ -155,6 +163,7 @@ body {
 
 /* 顾客区 */
 .customers-area {
+  padding: 0.9444rem 0.666rem 2.388rem 1.833rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -162,52 +171,64 @@ body {
   background-color: #ffa64d;
 }
 
+
 /* 顾客菜单 */
 .customers-area .food-menu {
   position: absolute;
-  top: -0.2rem;
-  left: 4.4rem;
-  width: 5rem;
+  top: 0.33rem;
+  left: 5.5rem;
+  width: 6.888rem;
 }
 
 /* 菜单间隔 */
 .customers-area .food-menu li:not(:first-child) {
-  margin-top: 0.2rem;
+  margin-top: 0.11rem;
 }
 
 /* 超时的食物 */
 .customers-area .food-overtime {
   background-color: #535362;
-  line-height: 2rem;
+  line-height: 1.9rem;
   text-decoration:line-through;
   color: #fff;
   width: 100%;
-  height: 2rem;
+  height: 2.1rem;
   border: 0.2rem solid #fff;
+  box-sizing: border-box;
 }
-/* 有超时食物的付款顾客 */
+/* 付款顾客的超时食物 */
 .customers-area .pay .food-overtime {
+  line-height: 2.1rem;
+  text-decoration:line-through;
+  color: #fff;
+  width: 100%;
+  height: 2.1rem;
+  border: 0.2rem solid #fff;
+  box-sizing: border-box;
   background: #00b200
 }
 
 /* 吃完的食物 */
 .customers-area .pay .eat-finish {
   background-color: #00b200;
-  line-height: 2rem;
+  line-height: 1.9rem;
   color: #fff;
   width: 100%;
-  height: 2rem;
+  height: 2.1rem;
   border: 0.2rem solid #fff;
+  box-sizing: border-box;
+  background: #00b200
 }
 
-/* 进食的进度 */
+/* 正在吃的食物进度 */
 .customers-area .eating-progress {
   background: linear-gradient(to right,#d96d00 0%,#d96d00 40%,#ff9122 41%,#ff9122 100% );
-  line-height: 2rem;
+  line-height: 1.9rem;
   color: #fff;
   width: 100%;
-  height: 2rem;
+  height: 2.1rem;
   border: 0.2rem solid #fff;
+  box-sizing: border-box;
 }
 
 /* 生气的顾客 */
@@ -251,7 +272,9 @@ body {
 .customers-queue-area{
   display: flex;
   justify-content: flex-end;
-  margin: -1.6rem 1.6rem 1rem 0;
+  width: 32.666rem;
+  height: 7.44rem;
+  margin: -2.6rem auto 1rem auto;
 }
 
 /* 排队进度 */
@@ -262,13 +285,15 @@ body {
   background: linear-gradient(to right, #006dd9 0%,#006dd9 45%,#2693ff 46%,#2693ff 100%);
   color: #fff;
   width: 7.8rem;
-  height: 2rem;
+  height: 2.1rem;
+  line-height: 1.9rem;
   border: 0.2rem solid #fff;
+  box-sizing: border-box;
 }
 
 /* 排队顾客 */
 .customers-queue-area .customer-queue {
-  margin-left: -2rem;
+  margin-left: -1.5rem;
   z-index: 999;
   background: linear-gradient(to right, #2693ff 0%,#2693ff 50%,#006dd9 51%,#006dd9 100%);
 }
