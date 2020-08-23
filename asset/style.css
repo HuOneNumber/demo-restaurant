@@ -1,3 +1,58 @@
+@media screen and (min-width: 280px) {
+  html {
+    font-size: 7.875px;
+  }
+}
+  @media screen and (min-width: 320px) {
+  html {
+    font-size: 9px;
+  }
+}
+  @media screen and (min-width: 360px) {
+    html {
+      font-size: 10.125px;
+    }
+  }
+  @media screen and (min-width: 375px) {
+    html {
+      font-size: 10.546875px;
+    }
+  }
+  @media screen and (min-width: 411px) {
+    html {
+      font-size: 11.5593px;
+    }
+  }
+  @media screen and (min-width: 414px) {
+    html {
+      font-size: 11.64375px;
+    }
+  }
+  @media screen and (min-width: 450px) {
+    html {
+      font-size: 12.6562px;
+    }
+  }
+  @media screen and (min-width: 540px) {
+    html {
+      font-size: 15.1875px;
+    }
+  }
+  @media screen and (min-width: 640px) {
+    html {
+      font-size: 18px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 21.6px;
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    html {
+      font-size: 28.8px;
+    }
+  }
 /* 背景图 */
 html, body {
   height: 100%;
@@ -29,13 +84,11 @@ body {
 /* 时间信息 */
 .rst-info .date {
   width: 13.125rem;
-  left: 0px;  
   text-align: center;
 }
 
 /* 金币信息 */
 .rst-info .cash {
-  right: 0px;
   text-align: right;
   padding-right: 1.22rem;
   width: 17.222rem;
@@ -43,7 +96,6 @@ body {
 
 /* 厨师、顾客区公共样式 */
 .chef-area, .customers-area {
-  max-width: 1024px;
   width: 33.888rem;
   height: 20.55556rem;
   display: flex;
@@ -64,6 +116,7 @@ body {
   border-radius: 100%;
   text-align: center;
   position: relative;
+  
 }
 .person img {
   width: 100%;    
@@ -196,17 +249,6 @@ body {
   border: 0.2rem solid #fff;
   box-sizing: border-box;
 }
-/* 付款顾客的超时食物 */
-.customers-area .pay .food-overtime {
-  line-height: 2.1rem;
-  text-decoration:line-through;
-  color: #fff;
-  width: 100%;
-  height: 2.1rem;
-  border: 0.2rem solid #fff;
-  box-sizing: border-box;
-  background: #00b200
-}
 
 /* 吃完的食物 */
 .customers-area .pay .eat-finish {
@@ -238,11 +280,11 @@ body {
 }
 /* 生气提示 */
 .customers-area .anger .anger-icon  {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   position: absolute;
-  top: 2.8rem;
-  left: -2.8rem;
+  top: 3.4rem;
+  left: -1.8rem;
   cursor: pointer;
 }
 
@@ -254,11 +296,11 @@ body {
 
 /* 付款提示 */
 .customers-area .pay .coin-icon {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   position: absolute;
   top: 2.8rem;
-  left: -2.8rem;
+  left: -2rem;
   cursor: pointer;
 }
 
